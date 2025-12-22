@@ -69,12 +69,12 @@ const App = () => {
     const whatsappNumber = "51945591695";
     const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
-    // Mensajes predeterminados según el paquete
+    // Mensajes predeterminados según el paquete (sin mostrar precios)
     const getPackageMessage = (packageName) => {
         const messages = {
-            'clasico': `¡Hola! Me interesa el paquete *Clásico* (S/. 95). Me gustaría agendar una sesión de 30 minutos para conocer más detalles.`,
-            'emprendedor': `¡Hola! Me interesa el paquete *Emprendedor* (S/. 255). Me gustaría agendar una sesión de 30 minutos para conocer más detalles.`,
-            'premium': `¡Hola! Me interesa el paquete *Premium* (S/. 155). Me gustaría agendar una sesión de 30 minutos para conocer más detalles.`
+            'clasico': `¡Hola! Me interesa el paquete *Clásico*. Me gustaría agendar una sesión de 30 minutos para conocer más detalles sobre la inversión.`,
+            'emprendedor': `¡Hola! Me interesa el paquete *Emprendedor*. Me gustaría agendar una sesión de 30 minutos para conocer más detalles sobre la inversión.`,
+            'premium': `¡Hola! Me interesa el paquete *Premium*. Me gustaría agendar una sesión de 30 minutos para conocer más detalles sobre la inversión.`
         };
         return encodeURIComponent(messages[packageName] || messages['emprendedor']);
     };
@@ -331,7 +331,7 @@ const App = () => {
                             <h3 className="text-gray-400 font-bold text-xs uppercase tracking-widest mb-3 sm:mb-4">Inicial</h3>
                             <div className="text-2xl sm:text-3xl font-bold text-white mb-2">Clásico</div>
                             <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 sm:mb-6 drop-shadow-lg">
-                                S/. 95
+                                Consultar
                             </div>
 
                             <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 text-gray-200 text-xs sm:text-sm flex-grow">
@@ -357,7 +357,7 @@ const App = () => {
                             <h3 className="text-gray-500 font-bold text-xs uppercase tracking-widest mb-3 sm:mb-4 mt-1">Crecimiento Total</h3>
                             <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">Emprendedor</div>
                             <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 sm:mb-6 drop-shadow-md">
-                                S/. 255
+                                Consultar
                             </div>
 
                             <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 text-gray-700 text-xs sm:text-sm flex-grow">
@@ -381,7 +381,7 @@ const App = () => {
                             <h3 className="text-gray-400 font-bold text-xs uppercase tracking-widest mb-3 sm:mb-4">Intermedio</h3>
                             <div className="text-2xl sm:text-3xl font-bold text-white mb-2">Premium</div>
                             <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-4 sm:mb-6 drop-shadow-lg">
-                                S/. 155
+                                Consultar
                             </div>
 
                             <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8 text-gray-200 text-xs sm:text-sm flex-grow">
@@ -425,7 +425,7 @@ const App = () => {
                                 <div className="flex items-center justify-between">
                                     <div>
                                         <div className="font-bold text-gray-900 group-hover:text-[#214A44] transition-colors">Clásico</div>
-                                        <div className="text-sm text-gray-500">S/. 95</div>
+                                        <div className="text-sm text-gray-500">Consultar</div>
                                     </div>
                                     <ArrowRight className="text-gray-400 group-hover:text-[#214A44] transition-colors" size={20} />
                                 </div>
@@ -441,7 +441,7 @@ const App = () => {
                                             <span className="font-bold text-gray-900 group-hover:text-[#214A44] transition-colors">Emprendedor</span>
                                             <span className="text-xs bg-[#214A44] text-white px-2 py-0.5 rounded-full font-bold">Recomendado</span>
                                         </div>
-                                        <div className="text-sm text-gray-500">S/. 255</div>
+                                        <div className="text-sm text-gray-500">Consultar</div>
                                     </div>
                                     <ArrowRight className="text-[#214A44] transition-colors" size={20} />
                                 </div>
@@ -454,7 +454,7 @@ const App = () => {
                                 <div className="flex items-center justify-between">
                                     <div>
                                         <div className="font-bold text-gray-900 group-hover:text-[#214A44] transition-colors">Premium</div>
-                                        <div className="text-sm text-gray-500">S/. 155</div>
+                                        <div className="text-sm text-gray-500">Consultar</div>
                                     </div>
                                     <ArrowRight className="text-gray-400 group-hover:text-[#214A44] transition-colors" size={20} />
                                 </div>
@@ -572,7 +572,7 @@ const App = () => {
                             <a href="#" className="hover:text-white transition-colors">Privacidad</a>
                             <a href="#" className="hover:text-white transition-colors">Términos</a>
                             <span className="flex items-center gap-1 text-[#214A44]">
-                                <MapPin size={12} /> Lima, Perú
+                                <MapPin size={12} /> Lambayeque, Perú
                             </span>
                         </div>
                     </div>
